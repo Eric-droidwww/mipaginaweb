@@ -5,23 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Espinola Gutierrez</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Estilos básicos para una landing page limpia */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
-        header, footer { background-color: #2b2b2b; color: white; padding: 1em; text-align: center; }
-        .container { max-width: 1200px; margin: auto; padding: 20px; }
-        .hero { text-align: center; padding: 2em; background-color: #f8f8f8; }
-        .hero img { max-width: 100%; height: auto; }
-        .cta-button { display: inline-block; padding: 0.8em 1.5em; background-color: #ff6600; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        .features, .testimonials, .faq { padding: 2em 0; }
-        .feature-item { text-align: center; margin: 1em 0; }
-        .testimonial-item, .faq-item { margin-bottom: 1.5em; }
-        .faq h3 { cursor: pointer; }
-        footer a { color: #ff6600; text-decoration: none; }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Íconos -->
 </head>
 <body>
-
     <!-- Encabezado -->
     <header>
         <h1>Libros Increíbles Eric Espinola Gutierrez</h1>
@@ -29,32 +15,69 @@
     </header>
 
     <div class="container">
-        <!-- Hero Section con CTA principal -->
+        <!-- Hero Section -->
         <section class="hero">
             <h2>Encuentra tu próximo libro favorito</h2>
             <p>En Libros Increíbles, te ofrecemos una selección curada de los libros más emocionantes, educativos y cautivadores del mercado.</p>
             <a href="#catalogo" class="cta-button">Explorar el Catálogo</a>
             <img src="https://via.placeholder.com/800x400" alt="Imagen de libros destacados">
+            <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                <p>Valoración: 4.8/5</p>
+            </div>
         </section>
 
-        <!-- Beneficios / Características -->
+        <!-- Novedades -->
+        <section class="novedades">
+            <h2>Últimas Novedades</h2>
+            <div class="novedades-grid">
+                <div class="novedad-item">
+                    <img src="https://via.placeholder.com/150" alt="Libro 1">
+                    <h3>Libro 1</h3>
+                    <p>Una historia que te atrapará desde la primera página.</p>
+                </div>
+                <div class="novedad-item">
+                    <img src="https://via.placeholder.com/150" alt="Libro 2">
+                    <h3>Libro 2</h3>
+                    <p>Explora el universo con este fascinante libro de ciencia.</p>
+                </div>
+                <div class="novedad-item">
+                    <img src="https://via.placeholder.com/150" alt="Libro 3">
+                    <h3>Libro 3</h3>
+                    <p>Descubre secretos de negocios con esta lectura esencial.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beneficios -->
         <section class="features">
             <h2>¿Por qué elegirnos?</h2>
             <div class="feature-item">
-                <h3>Amplia Variedad</h3>
+                <h3><i class="fas fa-book"></i> Amplia Variedad</h3>
                 <p>Desde novelas hasta libros de ciencia, tenemos algo para todos los gustos.</p>
             </div>
             <div class="feature-item">
-                <h3>Envío Rápido</h3>
+                <h3><i class="fas fa-truck"></i> Envío Rápido</h3>
                 <p>Recibe tus libros en la puerta de tu casa en tiempo récord.</p>
             </div>
             <div class="feature-item">
-                <h3>Ofertas Exclusivas</h3>
+                <h3><i class="fas fa-tags"></i> Ofertas Exclusivas</h3>
                 <p>Accede a descuentos especiales solo para nuestros clientes.</p>
             </div>
         </section>
 
-        <!-- Testimonios / Pruebas sociales -->
+        <!-- Galería -->
+        <section class="galeria">
+            <h2>Galería de Productos</h2>
+            <div class="galeria-grid">
+                <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                <img src="https://via.placeholder.com/200" alt="Imagen 3">
+                <img src="https://via.placeholder.com/200" alt="Imagen 4">
+            </div>
+        </section>
+
+        <!-- Testimonios -->
         <section class="testimonials">
             <h2>Lo que dicen nuestros clientes</h2>
             <div class="testimonial-item">
@@ -65,9 +88,13 @@
                 <p>“La selección de libros es fantástica, siempre encuentro algo interesante para leer.”</p>
                 <p><strong>- Juan López</strong></p>
             </div>
+            <div class="testimonial-item">
+                <p>“Los precios son excelentes y las ofertas me sorprenden cada mes.”</p>
+                <p><strong>- Carla Martínez</strong></p>
+            </div>
         </section>
 
-        <!-- Formulario de suscripción -->
+        <!-- Formulario de Suscripción -->
         <section class="subscription">
             <h2>Suscríbete para recibir novedades y descuentos</h2>
             <form action="#" method="post">
@@ -97,9 +124,13 @@
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2023 Libros Increíbles. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Libros Increíbles. Todos los derechos reservados.</p>
         <p><a href="#contacto">Contáctanos</a> | <a href="#politicas">Políticas de Privacidad</a></p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
-
 </body>
 </html>
