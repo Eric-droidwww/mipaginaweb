@@ -1,18 +1,34 @@
 /* Estilos básicos */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #1a1a1a;
+    background-color: #f5f7fa; /* Fondo suave */
+    line-height: 1.6;
 }
 
-header, footer {
-    background-color: #2b2b2b;
+/* Encabezado */
+header {
+    background-color: #004d73; /* Azul oscuro */
     color: white;
-    padding: 1em;
+    padding: 1.5em 1em;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del encabezado */
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+/* Contenedor principal */
 .container {
     max-width: 1200px;
     margin: auto;
@@ -22,115 +38,232 @@ header, footer {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 2em;
-    background-color: #f8f8f8;
+    padding: 3em 2em;
+    background-color: #eaf4f8; /* Azul claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
 }
 
 .hero img {
     max-width: 100%;
     height: auto;
+    margin-top: 1em;
+    border-radius: 8px;
+    border: 2px solid #004d73;
+}
+
+.hero h2 {
+    font-size: 2.2em;
+    color: #004d73;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 1em 0;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 0.8em 1.5em;
-    background-color: #ff6600;
-    color: white;
+    padding: 1em 2em;
+    background-color: #ffcc00; /* Amarillo */
+    color: #004d73;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    border-radius: 50px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .cta-button:hover {
-    background-color: #e55a00;
+    background-color: #ffdb4d;
+    transform: scale(1.05);
 }
 
-/* Sección de Beneficios */
+/* Sección de Características */
 .features {
     padding: 2em 0;
     text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+.features h2 {
+    font-size: 2em;
+    color: #004d73;
+    margin-bottom: 1em;
 }
 
 .feature-item {
     text-align: center;
+    padding: 1em;
     margin: 1em 0;
+    border: 1px solid #d9edf2; /* Azul pastel */
+    border-radius: 8px;
+    background-color: #f9fcfe;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+    color: #004d73;
+    font-size: 1.5em;
+}
+
+.feature-item p {
+    color: #333;
 }
 
 /* Sección de Testimonios */
 .testimonials {
-    padding: 2em 0;
+    padding: 2em;
+    background-color: #d9edf2; /* Azul pastel */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #004d73;
+    margin-bottom: 1.5em;
 }
 
 .testimonial-item {
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
+    text-align: center;
     font-style: italic;
+    padding: 1em;
+    border: 1px solid #004d73;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    margin-bottom: 0.5em;
+}
+
+.testimonial-item strong {
+    color: #004d73;
+    display: block;
+    margin-top: 0.5em;
 }
 
 /* Formulario de Suscripción */
 .subscription {
-    padding: 2em 0;
+    padding: 2em;
     text-align: center;
+    background-color: #eaf4f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+.subscription h2 {
+    font-size: 2em;
+    color: #004d73;
+    margin-bottom: 1em;
 }
 
 .subscription form {
     display: inline-block;
-    margin-top: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .subscription label {
     display: block;
     margin-bottom: 0.5em;
     font-weight: bold;
+    color: #004d73;
 }
 
 .subscription input {
-    padding: 0.5em;
-    margin-right: 0.5em;
+    padding: 0.8em;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+    margin-right: 0.5em;
 }
 
 .subscription button {
     padding: 0.8em 1.5em;
-    background-color: #ff6600;
-    color: white;
+    background-color: #ffcc00;
+    color: #004d73;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .subscription button:hover {
-    background-color: #e55a00;
+    background-color: #ffdb4d;
+    transform: scale(1.05);
 }
 
 /* Sección de FAQ */
 .faq {
-    padding: 2em 0;
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+.faq h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #004d73;
+    margin-bottom: 1.5em;
 }
 
 .faq h3 {
     cursor: pointer;
-    color: #333;
+    color: #004d73;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    transition: color 0.3s ease;
 }
 
 .faq h3:hover {
-    color: #ff6600;
+    color: #ffcc00;
 }
 
 .faq-item {
     margin-bottom: 1.5em;
+    border-bottom: 1px solid #eaf4f8;
+    padding-bottom: 1em;
 }
 
 /* Pie de página */
+footer {
+    padding: 2em 1em;
+    background-color: #004d73;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+}
+
 footer a {
-    color: #ff6600;
+    color: #ffcc00;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
+    color: #ffdb4d;
     text-decoration: underline;
 }
